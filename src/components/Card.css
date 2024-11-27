@@ -1,0 +1,93 @@
+.card {
+    background-color: #fff;
+    border: 1px solid #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: auto;
+    height: 120px;
+    margin: 16px;
+    padding: 4px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+  }
+  
+  .ticket-id {
+    font-size: 10px;
+    font-weight: bold;
+    color: #3333338b;
+  }
+  
+  .user-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #f9f9f9;
+  }
+  
+  .card-body {
+    padding: 1px;
+    height: 60px;
+    
+  }
+  
+  .ticket-title {
+    font-size: 12px;
+    font-weight:500;
+    margin-bottom: 8px;
+    color: #222;
+  }
+  
+  .ticket-description {
+    font-size: 12px;
+    color: #555;
+  }
+  
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    padding: 2px 4px;
+    background-color: #ffffff;
+  }
+  
+  .badge {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  
+  .priority-badge {
+    background-color: #ffffff;
+    color: #171717;
+    border: solid 0.5px #03030336 ;
+  }
+  
+  .status-badge {
+    background-color: #ffffff;
+    color: #171717;
+    border: solid 0.5px #03030336 ;
+  }
+  
+  .assigned-to {
+    font-size: 12px;
+    color: #777;
+  }
+  
+  
