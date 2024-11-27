@@ -1,8 +1,8 @@
 import React from "react";
 import Card from "./Card";
 import "./KanbanBoard.css";
-import threedots from "../assets/icons/3 dot menu.svg"; // Icon for menu options
-import add from "../assets/icons/add.svg"; // Icon for adding items
+import threedots from "../assets/icons/3 dot menu.svg"; 
+import add from "../assets/icons/add.svg"; 
 
 // KanbanBoard component to display tickets grouped and sorted based on props
 const KanbanBoard = ({ tickets, users, groupBy, sortBy }) => {

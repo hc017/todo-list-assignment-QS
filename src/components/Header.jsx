@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Header.css";
-import DisplaySVG from "../assets/icons/Display.svg"; // Replace with the correct SVG file path
+import DisplaySVG from "../assets/icons/Display.svg"; 
 
 // Header component with dropdown for grouping and sorting options
 const Header = ({ setGroupBy, setSortBy }) => {
