@@ -1,6 +1,6 @@
 .header {
     display: flex;
-    justify-content: flex-start; /* Align the button to the right */
+    justify-content: flex-start; 
     margin-top: 0;
     margin-bottom: 20px;
     padding: 10px;
@@ -33,8 +33,8 @@
   
   .dropdown-menu {
     position: absolute;
-    top: 40px; /* Dropdown appears below the button */
-    right: 15; /* Aligns the dropdown to the right side of the button */
+    top: 40px; 
+    right: 15; 
     background-color: #ffffff;
     border: 1px solid #ccc;
     border-radius: 5px;
