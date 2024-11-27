@@ -1,19 +1,37 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Header.css";
 import DisplaySVG from "../assets/icons/Display.svg"; // Replace with the correct SVG file path
 
 // Header component with dropdown for grouping and sorting options
 const Header = ({ setGroupBy, setSortBy }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false); // Track dropdown visibility
+  const dropdownRef = useRef(null); // Ref to track the dropdown element
 
   // Toggle dropdown visibility
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsDropdownOpen(false); // Close the dropdown
+      }
+    };
+
+    // Add event listener on mount
+    document.addEventListener("mousedown", handleClickOutside);
+
+    // Cleanup event listener on unmount
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <header className="header">
-      <div className="display-dropdown">
+      <div className="display-dropdown" ref={dropdownRef}>
         {/* Button to toggle the dropdown */}
         <button className="display-button" onClick={toggleDropdown}>
           <img src={DisplaySVG} alt="Display Options" className="svg-icon" />
